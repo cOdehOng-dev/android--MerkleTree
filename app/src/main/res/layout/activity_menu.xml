@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/main_page_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_sib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:text="Menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/makeLeafNode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/logout"
+                android:layout_alignLeft="@+id/logout"
+                android:layout_alignRight="@+id/logout"
+                android:layout_alignStart="@+id/logout"
+                android:layout_below="@+id/home_sib"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="LeafNode"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/makeMerkleRoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/logout"
+                android:layout_alignLeft="@+id/makeLeafNode"
+                android:layout_alignRight="@+id/logout"
+                android:layout_alignStart="@+id/makeLeafNode"
+                android:layout_below="@+id/makeLeafNode"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Merkle Root"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/makeMerkleTree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/makeMerkleRoot"
+                android:layout_alignLeft="@+id/makeMerkleRoot"
+                android:layout_alignRight="@+id/makeMerkleRoot"
+                android:layout_alignStart="@+id/makeMerkleRoot"
+                android:layout_below="@+id/makeMerkleRoot"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Merkle Tree"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/makeMerkleTree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#fff"
+                android:text="Do it Log out"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
